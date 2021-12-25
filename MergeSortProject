@@ -1,0 +1,13 @@
+[16,21,11,8,12,22] 
+** 1.Yukarıdaki dizinin merge sort türüne göre aşamalarını yazınız. **
+** Cevap: **
+1.Adım: [16,21,11]       [8,12,22]
+2.Adım: [16] [21,11]     [8] [12,22]
+3.Adım: [16] [21] [11]   [8] [12] [22]
+4.Adım: [16] [11,21]     [8,12] [22]
+5.Adım: [11,16,21]       [8,12,22]
+6.Adım: [8,11,12,16,21,22]
+** 2.Big-O gösterimini yazınız. **
+** Cevap **
+-Bu dizide sıralama adımları n-2 yani O(n) kadar ilerler. yani toplam adımlar 2ˣ=n olur. Bu da logn=x demektir.
+Big-O= O(nlogn) dir.
