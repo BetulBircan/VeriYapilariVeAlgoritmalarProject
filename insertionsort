@@ -1,0 +1,24 @@
+[22,27,16,2,18,6] 
+** 1.Yukarı verilen dizinin sort türüne göre aşamalarını yazınız. **
+** Cevap: **
+1.Adım: [2,27,16,22,18,6]
+2.Adım: [2,6,16,22,18,27]
+3.Adım: [2,6,16,22,18,27] 3.eleman zaten diğer 3 elemanın içinden en küçüğü olduğu için aynı kalır.Daha sonra da diğer elemanlara bakılır.
+4.Adım: [22,6,16,18,22,27]
+Arık bütün elemanlar insertion sorta göre küçükten büyüğe doğru sıralandığı için insertion sort işlemi sonlanmıştır.
+** 2.Big-O gösterimini yazınız. **
+** Cevap: **
+Dizi tek tek elemanlara bakarak  sıralandığında 1 eleman kaydırarak 4 adımda kontrol edildiği için n+(n-1)+(n-2)....1 e kadar girer ve Big-O ise şu formülle bulunur:
+-n*(n+1)/2
+Bunun içinde sonuc  n2+n/2 dir.kat sayısı en yüksek alındığı için Big-O ise **n2** dir.
+** Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
+Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız. ** 
+** Cevap: **
+18 Sayısı dizinin ortasında olduğu için Average case kapsamına girer
+
+** [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız. **
+** Cevap: **
+1.Adım: [2,3,5,8,7,9,4,15,6]
+2.Adım: [2,3,4,8,7,9,5,15,6]
+3.Adım: [2,3,4,6,7,9,5,15,6]
+4.Adım: [2,3,4,5,7,9,6,15,8]
